@@ -6,8 +6,8 @@
 /* Feel free to add as many of these imports as you need */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: #fff;
+  background-color: #020712;
 }
 
 .centered {
