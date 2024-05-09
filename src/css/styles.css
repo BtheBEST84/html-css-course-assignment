@@ -77,6 +77,8 @@ ul {
   color: #D4843A;
   border-radius: 25px;
   font-family: "Josefin Sans", sans-serif;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
 
@@ -111,7 +113,7 @@ a {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  padding: 20px 20px 20px 20px;
+  padding: 15px 20px 20px 20px;
 }
 
 .game-column {
@@ -119,12 +121,12 @@ a {
 }
 
 .section-head {
-  margin-left: 12%;
+  margin-left: 10%;
   margin-bottom: 0px;
   margin-top: 30px;
   font-weight: 400;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column; 
 }
 
@@ -135,4 +137,31 @@ span.size-32 {
 
 .game-title {
   margin-top: -30px;
+}
+
+#main-picture {
+  width: 100%;
+}
+
+.slogan-mainpage {
+  font-weight: 400;
+  text-wrap: wrap;
+  width: 100px;
+}
+
+#slogans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: -100px;
+  left: 15px;
+  margin-bottom: -130px;
+}
+
+h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+
 }
