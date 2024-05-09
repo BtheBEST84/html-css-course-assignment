@@ -10,6 +10,20 @@ body {
   background-color: #020712;
 }
 
+header {
+  background: linear-gradient(90deg, #D4843A, #A860F3);
+  width: auto;
+  height: 134px;
+  border-radius: 15px;
+
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -17,3 +31,23 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.header_logo {
+  width: 188px;
+  height: 117px;
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+.navigation {
+  margin-left: 50px;
+  margin-top: 90px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  
+
+}
+
