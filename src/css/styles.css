@@ -19,21 +19,17 @@ footer {
   border-radius: 15px;
 }
 
-header {
-  width: 100%;
-}
-
 nav {
   background: linear-gradient(90deg, #D4843A, #A860F3);
   height: 134px;
-  width: auto;
+  width: 100%;
   border-radius: 15px;
   display: flex;
 }
 
 header {
   background: linear-gradient(90deg, #D4843A, #A860F3);
-  width: auto;
+  width: 100%;
   height: 134px;
   border-radius: 15px;
 
@@ -54,9 +50,9 @@ header {
   flex-direction: column;
 }
 
-.header_logo {
+#header_logo {
   width: 188px;
-  height: 117px;
+  height: auto;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -66,15 +62,7 @@ header {
   width: auto;
 }
   
-.navigation {
-  margin-left: 50px;
-  margin-top: 90px;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+ul {
   list-style-type: none;
-  
-
 }
 
