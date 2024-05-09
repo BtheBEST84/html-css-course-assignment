@@ -14,7 +14,7 @@ body {
 
 footer {
   width: 100%;
-  height: 134px;
+  height: 364px;
   background: linear-gradient(90deg, #A860F3, #D4843A);
   border-radius: 15px;
 }
@@ -50,19 +50,45 @@ header {
   flex-direction: column;
 }
 
-.header_logo {
+.header-logo {
   width: 188px;
   height: auto;
   margin-top: 10px;
   margin-left: 10px;
 }
 
+.footer-logo {
+  width: 117px;
+  height: auto;
+}
+
 .gameCover {
-  height: 288px;
+  height: 204px;
   width: auto;
 }
   
 ul {
   list-style-type: none;
+  
 }
 
+.details {
+  background: #fff;
+  color: #D4843A;
+  border-radius: 25px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  width: auto;
+  height: 22px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
