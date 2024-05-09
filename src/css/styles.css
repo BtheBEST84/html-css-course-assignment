@@ -51,30 +51,21 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-<<<<<<< HEAD
   flex-direction: column;
 }
 
-#header_logo {
-=======
-}
-
 .header_logo {
->>>>>>> 23a5de2da94d95c625cec5686bfeb80961704c8d
   width: 188px;
   height: 117px;
   margin-top: 10px;
   margin-left: 10px;
-<<<<<<< HEAD
 }
 
 .gameCover {
   height: 288px;
   width: auto;
 }
-=======
   
-}
 .navigation {
   margin-left: 50px;
   margin-top: 90px;
@@ -87,4 +78,3 @@ header {
 
 }
 
->>>>>>> 23a5de2da94d95c625cec5686bfeb80961704c8d
