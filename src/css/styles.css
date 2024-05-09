@@ -8,6 +8,27 @@
 body {
   color: #fff;
   background-color: #020712;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+footer {
+  width: 100%;
+  height: 134px;
+  background: linear-gradient(90deg, #A860F3, #D4843A);
+  border-radius: 15px;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background: linear-gradient(90deg, #D4843A, #A860F3);
+  height: 134px;
+  width: auto;
+  border-radius: 15px;
+  display: flex;
 }
 
 .centered {
@@ -16,4 +37,17 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+}
+
+#header_logo {
+  width: 188px;
+  height: 117px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.gameCover {
+  height: 288px;
+  width: auto;
 }
