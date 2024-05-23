@@ -8,11 +8,14 @@
 @import url("./about.css");
 
 .test {
-  background-image: url(/assets/images/Gamergirl.png);
+  background-image: url(assets/images/Gamergirl.png);
   height: 330px;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
 }
 
 body {
@@ -164,8 +167,7 @@ span.size-32 {
 #slogans {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
+justify-content: space-between;  position: relative;
   top: 120px;
   left: 15px;
   margin-bottom: 
@@ -173,8 +175,9 @@ span.size-32 {
 
 .slogan2 {
   position: inherit;
-  ;
+  display: flex;
   text-align: center;
+  justify-content: baseline;
 }
 
 h2 {
