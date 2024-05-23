@@ -7,6 +7,14 @@
 
 @import url("./about.css");
 
+.test {
+  background-image: url(/assets/images/Gamergirl.png);
+  height: 330px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 body {
   color: #fff;
   background-color: #020712;
@@ -158,9 +166,15 @@ span.size-32 {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  top: -100px;
+  top: 120px;
   left: 15px;
-  margin-bottom: -130px;
+  margin-bottom: 
+}
+
+.slogan2 {
+  position: inherit;
+  ;
+  text-align: center;
 }
 
 h2 {
