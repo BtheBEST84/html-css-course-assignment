@@ -9,3 +9,10 @@ nav {
     background: linear-gradient(90deg, #D4843A, #A860F3);
     width: 100%;
 }
+
+.header-logo{
+    width: 188px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
