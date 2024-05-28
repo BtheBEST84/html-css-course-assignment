@@ -1,5 +1,8 @@
 body {
     max-width: 100%;
+    color: #fff;
+    background-color: #020712;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 nav {
@@ -16,3 +19,56 @@ nav {
     margin-top: 25px;
     margin-left: 10px;
 }
+
+#main-picture {
+    max-width: 100%;
+}
+
+#slogans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+  }
+
+  .slogan2 {
+    position: inherit;
+    display: flex;
+    text-align: center;
+    justify-content: baseline;
+  }
+
+  .game-column {
+    width: 140px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+  
+  }
+
+  .game-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+  }
+
+  .gameCover {
+    height: 188px;
+    width: auto;
+    border-radius: 14px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
