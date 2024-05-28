@@ -22,17 +22,19 @@ footer {
   border-radius: 15px;
 }
 
+
+
 nav {
   background: linear-gradient(90deg, #D4843A, #A860F3);
   height: 134px;
-  width: 95%;
+  width: 50%;
   border-radius: 15px;
   display: flex;
 }
 
 header {
   background: linear-gradient(90deg, #D4843A, #A860F3);
-  width: 100%;
+  width: 50%;
   height: 134px;
   border-radius: 15px;
 
