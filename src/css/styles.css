@@ -7,15 +7,13 @@
 
 @import url("./about.css");
 
-html, body {
-  overflow: hidden;
-}
 
 body {
   color: #fff;
   background-color: #020712;
   font-family: "Josefin Sans", sans-serif;
   width: 100%;
+  overflow-x: hidden;
   position: relative;
 }
 
