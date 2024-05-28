@@ -1,0 +1,11 @@
+body {
+    max-width: 100%;
+}
+
+nav {
+    height: 134px;
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(90deg, #D4843A, #A860F3);
+    width: 100%;
+}
