@@ -82,7 +82,7 @@ nav {
 
   footer {
     height: 364px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     display: flex;
     background: linear-gradient(90deg, #A860F3, #D4843A);
     width: 100%;
