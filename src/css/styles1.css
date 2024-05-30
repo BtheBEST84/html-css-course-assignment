@@ -3,14 +3,16 @@ body {
     color: #fff;
     background-color: #020712;
     font-family: "Josefin Sans", sans-serif;
+    margin: 0;
 }
 
 nav {
     height: 134px;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     display: flex;
     background: linear-gradient(90deg, #D4843A, #A860F3);
     width: 100%;
+
 }
 
 .header-logo{
