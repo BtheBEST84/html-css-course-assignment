@@ -118,3 +118,13 @@ nav {
     margin-top: 20px;
 
   }
+
+  .details {
+    background: #fff;
+    color: #D4843A;
+    border-radius: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
