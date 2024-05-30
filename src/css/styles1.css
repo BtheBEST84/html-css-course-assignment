@@ -71,4 +71,11 @@ nav {
   ul {
     list-style-type: none;
   }
-  
+
+  footer {
+    height: 134px;
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(90deg, #A860F3, #D4843A);
+    width: 100%;
+  }
