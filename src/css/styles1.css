@@ -86,3 +86,25 @@ nav {
     width: 117px;
     height: 73px;
   }
+
+  .add-shopping-cart {
+    color:#D4843A;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 5px 4px 2px 4px;
+    text-align: center;
+ 
+  }
+
+  .footer-logo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .social-media-text {
+    margin-top: 20px;
+
+  }
