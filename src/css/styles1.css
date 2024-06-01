@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.section-head {
+    margin-left: 8%;
+    
+}
 nav {
     height: 134px;
     border-radius: 0 0 15px 15px;
@@ -39,22 +43,36 @@ nav {
   }
 
   .slogan2 {
-    position: inherit;
-    display: flex;
+    width: 100%;
     text-align: center;
-    justify-content: baseline;
-  }
+}
 
-  .game-column {
-    width: 140px;
-  }
-
+ 
   h2 {
     font-weight: 400;
     font-style: italic;
     font-size: 22px;
   
   }
+  .game-column {
+    width: 140px;
+  }
+
+.game-title {
+    position: relative;
+    top:-45px;
+}
+
+.game-details {
+    display: flex;
+    position: relative;
+    top:-65px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    
+
+}
 
   .game-row {
     display: flex;
@@ -62,7 +80,10 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    
+  }
+
+  .price {
+    margin-top: 13px
   }
 
   .gameCover {
@@ -126,5 +147,9 @@ nav {
     font-family: "Josefin Sans", sans-serif;
     padding: 5px 10px;
     font-size: 12px;
+    margin-top: 8px;
+    height: 24px;
   }
+
+  
   
