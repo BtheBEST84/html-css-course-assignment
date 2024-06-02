@@ -6,10 +6,26 @@ body {
     margin: 0;
 }
 
+main {
+    flex: 1;
+   
+}
+
 .section-head {
     margin-left: 8%;
     
 }
+
+@media (width >700px) {
+    .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%; 
+    }
+}
+
 nav {
     height: 134px;
     border-radius: 0 0 15px 15px;
@@ -127,7 +143,16 @@ nav {
         background: linear-gradient(#A860F3, #D4843A);
         width: 100%;
         margin: 0px;
+
       }
+    
+    .wrapper {
+            min-height: 100%;
+            
+            
+        }
+    
+
 
 
   .footer-logo {
@@ -174,8 +199,5 @@ nav {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
-  }
-
-  
+    }
   
