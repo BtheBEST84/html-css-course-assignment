@@ -1,9 +1,7 @@
 body {
     max-width: 100%;
     color: #fff;
-    /* background: #020712; */
-    background: linear-gradient(90deg, #D4843A, #A860F3);
-    background-color: linear-gradient(90deg, #D4843A, #A860F3);
+    background: #020712;
     font-family: "Josefin Sans", sans-serif;
     margin: 0;
 }
@@ -16,7 +14,7 @@ nav {
     height: 134px;
     border-radius: 0 0 15px 15px;
     display: flex;
-    background: linear-gradient(90deg, #D4843A, #A860F3);
+    background: linear-gradient(#D4843A, #A860F3);
     width: 100%;
 
 }
