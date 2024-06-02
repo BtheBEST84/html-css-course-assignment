@@ -11,8 +11,15 @@ main {
    
 }
 
+.picture-slogan-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section-head {
-    margin-left: 8%;
+    margin-bottom: 25px;
     
 }
 
@@ -21,8 +28,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%; 
+    margin-left: 25%;
+    margin-right: 25%; 
     }
 }
 
@@ -52,11 +59,34 @@ nav {
     max-width: 100%;
 }
 
+@media (width < 550px) {
+.slogan-mainpage {
+    overflow: break-word;
+    width: 80px;
+    }
 #slogans {
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  
-  }
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+     }
+}
+
+@media (width >= 550px) {
+
+    #slogans {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+         }
+    }
+
+
 
   .slogan2 {
     width: 100%;
@@ -97,7 +127,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .price {
@@ -201,3 +231,9 @@ nav {
     flex-direction: column;
     }
   
+    .new-games {
+        display:flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
