@@ -1,8 +1,8 @@
 body {
     max-width: 100%;
     color: #fff;
-    background: linear-gradient(90deg, #D4843A, #A860F3);
-    background-color: #020712;
+    background: #020712;
+    background-color: linear-gradient(90deg, #D4843A, #A860F3);
     font-family: "Josefin Sans", sans-serif;
     margin: 0;
 }
