@@ -46,10 +46,16 @@ main {
 }
 
 nav {
-    height: 134px;
+    height: 130px;
     border-radius: 0 0 15px 15px;
     background: linear-gradient(#D4843A, #A860F3);
     width: 100%;
+}
+
+.active {
+    border: #020712 solid 4px;
+    border-radius: 15px;
+    
 }
 
 .navigation-div{
@@ -105,7 +111,9 @@ nav {
          }
     }
 
-
+li {
+    padding: 11px 15px 11px 15px;
+}
 
   .slogan2 {
     width: 100%;
@@ -203,6 +211,10 @@ nav {
 
     .navigation-links-div {
         height: 100%;
+    }
+
+    nav {
+        height: 160px;
     }
 }
   @media (width > 730px) {
