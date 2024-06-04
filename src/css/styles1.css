@@ -1,4 +1,4 @@
-@import url(src/css/contact.css);
+@import url("/src/css/contact.css");
 
 body {
     max-width: 100%;
@@ -219,7 +219,7 @@ li {
         height: 160px;
     }
 }
-  @media (width >= 730px) {
+  @media (width > 730px) {
     footer {
         height: 150px;
         flex-direction: row;
