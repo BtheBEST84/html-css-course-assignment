@@ -45,6 +45,7 @@
 
 .form-div {
     width: 50%;
+    margin-bottom: 40px;
 }
 
 @media (width < 730px) {
@@ -54,7 +55,7 @@
 
     .form-div {
         width: 100%;
-        margin-bottom: 40px;
+        
     }
     
     .contact-content {
