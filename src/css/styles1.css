@@ -320,3 +320,7 @@ li {
     .page-header {
       margin-left: 15px;
     }
+
+    input {
+      font-size: 16px;
+    }
