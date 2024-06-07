@@ -35,7 +35,7 @@
     margin-bottom: 40px;
 }
 
-@media (width <=730px) {
+@media (width <=900px) {
     .aboutUs-mobile-pictures {
         width: 100%;
         display: block;

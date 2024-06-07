@@ -1,0 +1,26 @@
+.games {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+}
+
+.games-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-in-list {
+    width: 150px;
+    margin-right: 20px;
+}
+
+@media (width <=730px) {
+    .game-in-list {
+        width: 150px;
+        margin: 0;
+    }
+}
