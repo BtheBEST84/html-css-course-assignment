@@ -36,7 +36,7 @@
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #contact-picture {
@@ -51,16 +51,16 @@
 
 @media (width < 730px) {
     #contact-picture {
-        display:none;
+        display: none;
     }
 
     .form-div {
         width: 100%;
-        
+
     }
-    
+
     .contact-content {
-     
+
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -105,7 +105,7 @@
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    
+
 }
 
 .modal .content {
@@ -114,5 +114,5 @@
 }
 
 #checked {
-   font-size: 36px;
+    font-size: 36px;
 }
