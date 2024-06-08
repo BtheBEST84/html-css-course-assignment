@@ -27,26 +27,48 @@ main {
 
 }
 
-@media (min-width: 1200px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
 
 }
 
-@media (min-width: 1600px) {
+.new-games {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 1400px;
+}
+
+@media (min-width: 840px) {
   .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .new-games {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .new-games {
     margin-left: 20%;
     margin-right: 20%;
+  }
+}
 
+@media (min-width: 2000px) {
+
+
+  .new-games {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
@@ -308,12 +330,7 @@ footer {
   flex-direction: column;
 }
 
-.new-games {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
 
 .add-shopping-cart:hover,
 .details:hover {
