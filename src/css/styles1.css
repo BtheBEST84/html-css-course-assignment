@@ -27,7 +27,7 @@ main {
 
 }
 
-@media (width >1200px=<1600px) {
+@media (width >1200px <=1600px) {
   .content {
     display: flex;
     flex-direction: column;
