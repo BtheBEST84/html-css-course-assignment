@@ -214,7 +214,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+.navigation-links {
   list-style-type: none;
   display: flex;
   flex-direction: row;
