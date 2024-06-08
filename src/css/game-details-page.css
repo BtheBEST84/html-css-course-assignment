@@ -1,0 +1,50 @@
+.game-details-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+
+}
+
+.div-game-details-picture {
+    width: 600px;
+    margin-right: 10%;
+}
+
+.game-details-picture {
+    width: 100%;
+    margin-right: 10%;
+}
+
+.small-pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.game-page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.game-details-picture-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-game-picture-and-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-details-bullets {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+
+}
