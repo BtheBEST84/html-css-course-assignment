@@ -1,6 +1,7 @@
 @import url(./contact.css);
 @import url(./about.css);
 @import url(./games.css);
+@import url(./shopping-cart.css);
 
 body {
   max-width: 100%;
