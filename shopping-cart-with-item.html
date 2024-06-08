@@ -61,10 +61,53 @@
           </div>
           <div class="shopping-cart-item-price">
             <p>$13.99</p>
-            <span>deletebutton</span>
+            <a href="#button-press">
+              <span class="material-symbols-outlined">
+                delete_forever
+              </span>
+          </a>
           </div>
-          
         </div>
+        <div class="div-total-to-pay">
+          <div class="total-to-pay">
+            <p>TOTAL</p>
+            <p>$13.99</p>
+          </div>
+        </div>
+        <div class="div-shopping-cart-buttons">
+          <a href="#checkout">
+            <button class="shopping-cart-button" id="checkout-button">Checkout</button>
+          </a>
+          <a href="games.html">
+            <button class="shopping-cart-button" id="continue-shopping">Continue shopping</button>
+          </a>
+      </div>
+    </div>
+      
+    
+    <div id="button-press" class="overlay">
+      <div class="modal">
+        <h2>GAME REMOVED</h2>
+        <div class="modal-content">
+          <a class="close" href="shopping-cart.html">&times;</a>
+          <span class="material-symbols-outlined" id="checked">
+            check
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="checkout" class="overlay">
+      <div class="modal">
+        <h2>SUCCESSFULLY CHECKED OUT</h2>
+        <span class="material-symbols-outlined" id="checked">
+          check
+        </span>
+        <div class="button-in-modal">
+          <a href="games.html">
+            <button class="shopping-cart-button-checkout">Continue Shopping</button>
+          </a>
+        </div>
+      </div>
     </div>
     </main>
     <div class="wrapper">
