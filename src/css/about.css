@@ -22,6 +22,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -31,11 +32,8 @@
     width: 45%;
 }
 
-.page-header {
-    margin-bottom: 40px;
-}
 
-@media (width <=900px) {
+@media (max-width: 1300px) {
     .aboutUs-mobile-pictures {
         width: 100%;
         display: block;
