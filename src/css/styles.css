@@ -1,3 +1,4 @@
+@import url(./home.css);
 @import url(./contact.css);
 @import url(./about.css);
 @import url(./games.css);
@@ -14,64 +15,26 @@ body {
 
 main {
   flex: 1;
-
-}
-
-.picture-slogan-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .section-head {
   margin-bottom: 25px;
-
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-
 }
 
-.new-games {
+.div-flex-column {
   display: flex;
   flex-direction: column;
-  margin-left: 8%;
-  margin-right: 8%;
-  max-width: 1400px;
 }
 
-@media (min-width: 840px) {
-  .content {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .new-games {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .new-games {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-@media (min-width: 2000px) {
-
-
-  .new-games {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+.div-flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 nav {
@@ -84,12 +47,9 @@ nav {
 .active {
   border: #020712 solid 4px;
   border-radius: 15px;
-
 }
 
 .navigation-div {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 95%;
   align-items: baseline;
@@ -103,99 +63,15 @@ nav {
   margin-left: 10px;
 }
 
-#main-picture-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#main-picture {
-  max-width: 100%;
-}
-
-@media (width < 550px) {
-  .slogan-mainpage {
-    overflow: break-word;
-    width: 80px;
-  }
-
-  #slogans {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-  }
-}
-
-@media (width >=550px) {
-
-  #slogans {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 450px;
-  }
-}
 
 li {
   padding: 11px 15px 11px 15px;
-}
-
-.slogan2 {
-  width: 100%;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
 }
 
 .page-header {
   margin-bottom: 40px;
   text-transform: uppercase;
   font-size: 40px;
-}
-
-
-
-h2 {
-  font-weight: 400;
-  font-style: italic;
-  font-size: 22px;
-
-}
-
-.game-column {
-  width: 150px;
-}
-
-.game-title {
-  position: relative;
-  top: -45px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-}
-
-.game-details {
-  display: flex;
-  position: relative;
-  top: -65px;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 20px;
-
-
-}
-
-.game-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .price {
@@ -215,8 +91,6 @@ a {
 
 .navigation-links {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 500px;
   align-items: baseline;
@@ -280,8 +154,6 @@ footer {
 
 .wrapper {
   min-height: 100%;
-
-
 }
 
 .footer-logo {
