@@ -155,7 +155,8 @@
 }
 
 #checked-checkout,
-#checked-removed {
+#checked-removed,
+#danger {
     font-size: 75px;
 }
 
