@@ -154,6 +154,11 @@
     color: #fff;
 }
 
+#checked-checkout,
+#checked-removed {
+    font-size: 75px;
+}
+
 
 .div-shopping-cart-picture {
     display: flex;
