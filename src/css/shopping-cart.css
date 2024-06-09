@@ -133,22 +133,24 @@
     max-width: 500px;
 }
 
-.shopping-cart-button {
+.btn-shopping-cart-button {
     width: 700px;
     color: #fff;
     border-radius: 15px;
     border: none;
-    height: 40px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 #checkout-button {
     background: #aa611d;
-
+    color: #fff;
 }
 
 #continue-shopping {
     background: #9251d8;
+    color: #fff;
 }
 
 
