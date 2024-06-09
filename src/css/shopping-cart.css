@@ -121,6 +121,12 @@
     margin-bottom: 200px;
 }
 
+.active-cart {
+    border: #020712 solid 4px;
+    border-radius: 15px;
+    padding: 15px 6px 3px 6px;
+}
+
 .btn-shopping-cart-empty,
 .btn-shopping-cart-checkout {
     background: linear-gradient(#A860F3, #aa611d);

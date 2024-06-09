@@ -47,6 +47,11 @@ nav {
 .active {
   border: #020712 solid 4px;
   border-radius: 15px;
+  padding: 6px;
+}
+
+.passive {
+  padding: 6px
 }
 
 .navigation-div {
