@@ -293,35 +293,17 @@ footer {
   text-decoration: none;
   background-color: #fff;
   color: #aa611d;
-  ;
-  padding: 20px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
   border-radius: 10px;
-  top: -45px;
-  left: 105px;
+}
+
+.btn-add-to-shopping-cart {
+  padding: 20px 6px 2px 6px;
 }
 
 .div-btn-add-to-shopping-cart {
   position: relative;
   top: -45px;
   left: 105px;
-}
-
-.add-shopping-cart {
-  color: #aa611d;
-  background: #FFF;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  text-align: center;
-  position: relative;
-  top: -45px;
-  left: 105px;
-  border: none;
-  width: 100px;
-  text-wrap: none;
 }
 
 .footer-logo-div {
@@ -337,15 +319,15 @@ footer {
 
 }
 
-.details {
+.btn-details {
   background: #fff;
   color: #aa611d;
   border-radius: 25px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: inherit;
   padding: 5px 10px;
   font-size: 12px;
   margin-top: 8px;
-  height: 24px;
+  height: 10px;
 }
 
 .flex-wrapper {
