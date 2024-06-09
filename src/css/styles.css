@@ -164,12 +164,12 @@ footer {
 .btn {
   text-decoration: none;
   background-color: #fff;
-  color: #aa611d;
   border-radius: 10px;
 }
 
 .btn-add-to-shopping-cart {
   padding: 20px 6px 2px 6px;
+  color: #aa611d;
 }
 
 .div-btn-add-to-shopping-cart {
