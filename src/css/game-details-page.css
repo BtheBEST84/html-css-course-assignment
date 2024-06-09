@@ -58,6 +58,31 @@
     top: 3px;
 }
 
+.game-details-text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.game-details-price {
+    font-size: 1.5em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    color: #fff;
+    background: linear-gradient(#A860F3, #aa611d);
+    border-radius: 15px;
+    height: 50px;
+    width: 130px;
+}
+
 @media (max-width: 1100px) {
     .div-game-picture-and-info {
         display: flex;
