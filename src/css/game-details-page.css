@@ -52,6 +52,12 @@
 
 }
 
+#in-stock {
+    position: relative;
+    font-size: 16px;
+    top: 3px;
+}
+
 @media (max-width: 1100px) {
     .div-game-picture-and-info {
         display: flex;
