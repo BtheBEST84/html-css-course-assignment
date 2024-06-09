@@ -15,6 +15,7 @@
 .game-details-picture {
     width: 100%;
     margin-right: 10%;
+    border-radius: 15px;
 }
 
 .small-pictures {
@@ -22,6 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
 }
 
 .game-page-title {
@@ -77,7 +79,7 @@
 
 .button {
     color: #fff;
-    background: linear-gradient(#A860F3, #aa611d);
+    background: linear-gradient(#9251d8, #aa611d);
     border-radius: 15px;
     height: 50px;
     width: 130px;
