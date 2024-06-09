@@ -1,6 +1,4 @@
 .message-form {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     height: 400px;
     width: 100%;
@@ -30,8 +28,7 @@
 }
 
 .contact-content {
-    display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
     align-items: center;
     margin-left: 5%;

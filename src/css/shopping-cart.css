@@ -239,4 +239,8 @@
     .shopping-cart {
         margin-bottom: 50px;
     }
+
+    .btn-shopping-cart-empty {
+        font-size: 20px;
+    }
 }

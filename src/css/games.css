@@ -1,6 +1,4 @@
 .games-content {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
 }
@@ -11,8 +9,6 @@
 }
 
 .games {
-    display: flex;
-    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
     width: 100%;
