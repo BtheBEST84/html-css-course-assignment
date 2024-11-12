@@ -1,11 +1,25 @@
-const loadGames = async () => {
-  try {
-    const result = await fetch("https://v2.api.noroff.dev/gamehub");
-    const games = await result.json();
+// Load games
+let gamesList = [];
+let games = [];
 
-    document.getElementById("game-row").innerHTML = `
-        
-    ${games.data
+getGames();
+
+async function getGames() {
+  try {
+    const response = await fetch("https://v2.api.noroff.dev/gamehub");
+    const data = await response.json();
+    gamesList = data;
+    renderGames();
+    // console.log(gamesList);
+  } catch (error) {
+    console.log("ERROR!", error);
+  }
+}
+
+function renderGames() {
+  document.getElementById("game-row").innerHTML = `
+
+    ${gamesList.data
       .map(function (game) {
         return `
         <div id="games-in-list">
@@ -15,9 +29,9 @@ const loadGames = async () => {
                   class="gameCover"
                   alt="${game.image.alt}"
                 >
-              </a>  
-              <div class="div-btn-add-to-shopping-cart">
-                <a class="btn btn-add-to-shopping-cart" href="#button-press">
+              </a>
+              <div class="div-btn-add-to-shopping-cart" onclick="addToCart('${game.id}')">
+                <a class="btn btn-add-to-shopping-cart">
                   <span class="material-symbols-outlined size-32">
                   add_shopping_cart
                   </span>
@@ -33,10 +47,48 @@ const loadGames = async () => {
       })
       .join("")}
     `;
-    console.log(games.data[0].title);
-  } catch (error) {
-    console.log("ERROR!", error);
-  }
-};
 
-loadGames();
+  document.getElementById("shopping-cart").innerHTML = `
+    <a href="shopping-cart.html"
+                  ><span class="material-symbols-outlined size-36"
+                    >shopping_cart</span
+                  >CART (${cart.length})</a
+                >
+    `;
+}
+
+// let cart;
+
+// renderGames();
+
+// Create cart array
+let cartList = JSON.parse(localStorage.getItem("cartList"));
+let cart;
+
+if (JSON.parse(localStorage.getItem("cartList")) === null) {
+  cart = [];
+} else {
+  cart = cartList;
+}
+// Add to cart function
+
+function addToCart(id) {
+  //check if the product is already in the cart
+
+  if (cart.some((item) => item.id === id)) {
+    alert("Product already in the cart");
+  } else {
+    const item = gamesList.data.find((game) => game.id === id);
+    cart.push(item);
+    document.getElementById("shopping-cart").innerHTML = `
+    <a href="shopping-cart.html"
+                  ><span class="material-symbols-outlined size-36"
+                    >shopping_cart</span
+                  >CART (${cart.length})</a
+                >
+    `;
+    localStorage.setItem("cartList", JSON.stringify(cart));
+    let cartList = JSON.parse(localStorage.getItem("cartList"));
+    console.log(cartList);
+  }
+}

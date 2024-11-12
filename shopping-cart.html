@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="aa611d">
-    <meta name="description" content="Game Hub - Our shopping cart is waiting for you!">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="aa611d" />
+    <meta
+      name="description"
+      content="Game Hub - Our shopping cart is waiting for you!"
+    />
     <title>Game Hub - Cart</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
-    >
+    />
   </head>
   <body class="flex-wrapper">
     <header>
@@ -27,15 +30,15 @@
               class="header-logo"
               src="assets/images/GameHub_Logo.png"
               alt="Game Hub logo"
-            >
+            />
           </a>
 
           <div class="navigation-links-div">
             <ul class="navigation-links div-flex-row">
               <li><a class="passive" href="games.html">GAMES</a></li>
               <li><a class="passive" href="about.html">ABOUT</a></li>
-              <li><a class="passive"href="contact.html">CONTACT</a></li>
-              <li>
+              <li><a class="passive" href="contact.html">CONTACT</a></li>
+              <li id="shopping-cart">
                 <a class="active-cart" href="shopping-cart.html"
                   ><span class="material-symbols-outlined size-36"
                     >shopping_cart</span
@@ -43,33 +46,11 @@
                 >
               </li>
             </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
-    <main>
-      <div class="div-flex-row contact-content">
-        <div class="shopping-cart">
-          <h1 class="page-header">Shopping Cart</h1>
-          <div class="shopping-cart-content">
-            <div class="empty-shopping-cart">
-              <div class="div-text-empty-shopping-cart">
-                <p class="text-empty-shopping-cart">NO GAMES?</p>
-                <p class="text-empty-shopping-cart">NO FUN!</p>
-              </div>
-              <div class="div-shopping-cart-button">
-                <a class="btn btn-shopping-cart-empty " href="games.html">Find something to play</a>
-              </div>  
-            </div>
-            
-              
-            
           </div>
         </div>
-        <img id="shopping-cart-picture" src="assets/images/florian-olivo-Mf23RF8xArY-unsplash-downscaled.png" alt="Guy gaming on a computer">
-      </div>
-      
-    </main>
+      </nav>
+    </header>
+    <main id="shopping-cart-items"></main>
     <div class="wrapper">
       <footer>
         <div class="social-div">
@@ -80,21 +61,21 @@
                 src="assets/images/Instagram.png"
                 class="social-media-icon"
                 alt="Instagram"
-              >
+              />
             </a>
             <a href="https://www.facebook.com">
               <img
                 src="assets/images/Facebook.png"
                 class="social-media-icon"
                 alt="Facebook"
-            >
-          </a>
+              />
+            </a>
             <a href="https://www.x.com">
               <img
                 src="assets/images/TwitterX.png"
                 class="social-media-icon"
                 alt="X"
-              >
+              />
             </a>
           </div>
         </div>
@@ -103,17 +84,18 @@
             src="assets/images/GameHub_Logo.png"
             class="footer-logo"
             alt="Game Hub Logo"
-          >
+          />
           <p>Copyright &copy;, Game Hub Inc. All rights reserved</p>
         </div>
 
         <div>
-          <img src="assets/images/Visa.png" alt="VISA">
-          <img src="assets/images/PayPal.png" alt="PayPal">
-          <img src="assets/images/MasterCard.png" alt="MasterCard">
-          <img src="assets/images/American_Express.png" alt="AmEx">
+          <img src="assets/images/Visa.png" alt="VISA" />
+          <img src="assets/images/PayPal.png" alt="PayPal" />
+          <img src="assets/images/MasterCard.png" alt="MasterCard" />
+          <img src="assets/images/American_Express.png" alt="AmEx" />
         </div>
       </footer>
     </div>
+    <script src="JS/shopping-cart.js"></script>
   </body>
 </html>
