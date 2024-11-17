@@ -21,6 +21,8 @@ async function getGames() {
     const data = await response.json();
 
     gamesList = data;
+    localStorage.setItem("cartList", JSON.stringify(gamesList));
+
     renderFilterButtons();
     renderGames();
   } catch (error) {
