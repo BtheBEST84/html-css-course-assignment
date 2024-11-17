@@ -88,7 +88,7 @@ function deleteFromCart(id) {
 }
 
 function checkOut() {
-  if (cartList.length < 1) {
+  if (cart.length < 1) {
     document.getElementById("shopping-cart-items").innerHTML = `
     
         <div class="modal">
