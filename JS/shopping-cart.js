@@ -58,7 +58,7 @@ function renderShoppingCartContent() {
         </div>
       </div>
       <div class="div-shopping-cart-buttons">
-        <a class="btn btn-shopping-cart" id="checkout-button" href="#checkout">Checkout</a>
+        <a class="btn btn-shopping-cart" id="checkout-button" onClick="checkOut()">Checkout</a>
         <a class="btn btn-shopping-cart" id="continue-shopping" href="games.html">Continue shopping</a>
       </div>
     </div>
@@ -88,4 +88,33 @@ function deleteFromCart(id) {
   // Rerender the cart icon and shopping cart items
   renderCart();
   renderShoppingCartContent();
+}
+
+function checkOut() {
+  if (cartList.length < 1) {
+    document.getElementById("shopping-cart-items").innerHTML = `
+    
+        <div class="modal">
+          <h2>You have to add games</h2>
+          <div class="modal-content">
+            <a class="close" href="games.html">&times;</a>
+            <span class="material-symbols-outlined" id="checked"> X </span>
+          </div>
+        </div>
+    
+    `;
+  } else {
+    document.getElementById("shopping-cart-items").innerHTML = `
+    
+        <div class="modal">
+          <h2>Successfully checked out</h2>
+          <div class="modal-content">
+            <a class="close" href="index.html">&times;</a>
+            <span class="material-symbols-outlined" id="checked"> check </span>
+          </div>
+        </div>
+    
+    `;
+    localStorage.removeItem("cartList");
+  }
 }

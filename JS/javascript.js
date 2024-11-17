@@ -19,6 +19,7 @@ async function getGames() {
   try {
     const response = await fetch("https://v2.api.noroff.dev/gamehub");
     const data = await response.json();
+
     gamesList = data;
     renderFilterButtons();
     renderGames();
@@ -41,7 +42,7 @@ function renderGames(filteredGames = gamesList.data) {
     .map((game) => {
       return `
         <div id="games-in-list" class="game-card">
-          <a href="game_${game.id}.html">
+          <a href="game_details.html?id=${game.id}">
             <img
               src="${game.image?.url || "placeholder.jpg"}"
               class="gameCover"
@@ -52,27 +53,26 @@ function renderGames(filteredGames = gamesList.data) {
             game.id
           }')">
             <a class="btn btn-add-to-shopping-cart">
-              <span class="material-symbols-outlined size-32">
-                add_shopping_cart
-              </span>
+              <span class="material-symbols-outlined size-32">add_shopping_cart</span>
             </a>
           </div>
           <p class="game-title">${game.title}</p>
           <div class="game-details">
             <p class="price">$ ${game.price.toFixed(2)}</p>
-            <a class="btn btn-details" href="game_${game.id}.html">DETAILS</a>
+            <a class="btn btn-details" href="game_details.html?id=${
+              game.id
+            }">DETAILS</a>
           </div>
         </div>
       `;
     })
     .join("");
   document.getElementById("shopping-cart").innerHTML = `
-    <a href="shopping-cart.html"
-                  ><span class="material-symbols-outlined size-36"
-                    >shopping_cart</span
-                  >CART (${cart.length})</a
-                >
-    `;
+    <a href="shopping-cart.html">
+      <span class="material-symbols-outlined size-36">shopping_cart</span>
+      CART (${cart.length})
+    </a>
+  `;
 }
 
 // Render filter buttons
