@@ -12,10 +12,9 @@ function renderCart() {
 
 renderCart();
 
-let total = cartList.reduce(
-  (accumulator, current) => accumulator + (current.price || 0),
-  0
-);
+let total = cartList
+  .reduce((accumulator, current) => accumulator + (current.price || 0), 0)
+  .toFixed(2);
 
 function renderShoppingCartContent() {
   document.getElementById("shopping-cart-items").innerHTML = `
