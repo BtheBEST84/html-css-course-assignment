@@ -26,6 +26,20 @@
   cursor: pointer;
 }
 
+#filters {
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  color: black;
+}
+
 @media (max-width: 440px) {
   .games {
     margin-left: 7%;
