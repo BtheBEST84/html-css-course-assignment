@@ -75,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
       CART (${cart.length})
     </a>
   `;
-
-  // Add to cart functionality on this page
 });
 
 function addToCart(id) {

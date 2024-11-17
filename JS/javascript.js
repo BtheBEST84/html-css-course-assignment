@@ -11,13 +11,13 @@ const storedCart = localStorage.getItem("cartList");
 
 if (storedCart) {
   try {
-    cart = JSON.parse(storedCart); // Parse the stored cart
+    cart = JSON.parse(storedCart);
     if (!Array.isArray(cart)) {
-      cart = []; // Reset to empty array if stored data is not an array
+      cart = [];
     }
   } catch (error) {
     console.error("Failed to parse cart data from localStorage:", error);
-    cart = []; // Reset to empty array on parse error
+    cart = [];
   }
 }
 
@@ -27,25 +27,21 @@ getGames();
 async function getGames() {
   const loadingSpinner = document.getElementById("loading-spinner");
 
-  // Show the spinner before the fetch begins
   loadingSpinner.style.display = "block";
 
   try {
     const response = await fetch("https://v2.api.noroff.dev/gamehub");
     const data = await response.json();
 
-    // Save data to localStorage and populate gamesList
     localStorage.setItem("gamesList", JSON.stringify(data));
     gamesList = data;
 
-    // Render filters and games
     renderFilterButtons();
     renderGames();
   } catch (error) {
     alert("Something went wrong when trying to load the games");
     console.error("Error fetching games:", error);
   } finally {
-    // Hide the spinner once the fetch and rendering are complete
     loadingSpinner.style.display = "none";
   }
 }
@@ -127,7 +123,6 @@ function renderFilterButtons() {
 
 // Add a game to the cart
 function addToCart(id) {
-  // Ensure gamesList is populated before proceeding
   if (!gamesList || !gamesList.data) {
     alert("Games data is not available yet. Please try again.");
     return;
