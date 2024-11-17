@@ -1,18 +1,27 @@
-// Load games
+// Initialize games and filters
 let gamesList = [];
 let games = [];
 let filterGenre = [];
 
-// Create cart array
-let cartList = JSON.parse(localStorage.getItem("cartList"));
-let cart;
+// Initialize cart array
+let cart = [];
 
-if (JSON.parse(localStorage.getItem("cartList")) === null) {
-  cart = [];
-} else {
-  cart = cartList;
+// Retrieve cart data from localStorage
+const storedCart = localStorage.getItem("cartList");
+
+if (storedCart) {
+  try {
+    cart = JSON.parse(storedCart); // Parse the stored cart
+    if (!Array.isArray(cart)) {
+      cart = []; // Reset to empty array if stored data is not an array
+    }
+  } catch (error) {
+    console.error("Failed to parse cart data from localStorage:", error);
+    cart = []; // Reset to empty array on parse error
+  }
 }
 
+// Fetch games and initialize data
 getGames();
 
 async function getGames() {
@@ -20,9 +29,11 @@ async function getGames() {
     const response = await fetch("https://v2.api.noroff.dev/gamehub");
     const data = await response.json();
 
+    // Save data to localStorage and populate gamesList
+    localStorage.setItem("gamesList", JSON.stringify(data));
     gamesList = data;
-    localStorage.setItem("cartList", JSON.stringify(gamesList));
 
+    // Render filters and games
     renderFilterButtons();
     renderGames();
   } catch (error) {
@@ -32,7 +43,7 @@ async function getGames() {
 }
 
 // Render games based on filter
-function renderGames(filteredGames = gamesList.data) {
+function renderGames(filteredGames = gamesList?.data || []) {
   const gameRowElement = document.getElementById("game-row");
 
   if (!filteredGames || filteredGames.length === 0) {
@@ -69,6 +80,8 @@ function renderGames(filteredGames = gamesList.data) {
       `;
     })
     .join("");
+
+  // Update the cart display
   document.getElementById("shopping-cart").innerHTML = `
     <a href="shopping-cart.html">
       <span class="material-symbols-outlined size-36">shopping_cart</span>
@@ -104,45 +117,55 @@ function renderFilterButtons() {
   });
 }
 
+// Add a game to the cart
 function addToCart(id) {
-  //check if the product is already in the cart
+  // Ensure gamesList is populated before proceeding
+  if (!gamesList || !gamesList.data) {
+    alert("Games data is not available yet. Please try again.");
+    return;
+  }
 
+  // Check if the product is already in the cart
   if (cart.some((item) => item.id === id)) {
     document.getElementById("main").innerHTML = `
-    
-        <div class="modal">
-          <h2>YOU CAN ONLY BUY ONE COPY</h2>
-          <div class="modal-content">
-            <a class="close" href="games.html">&times;</a>
-            <span class="material-symbols-outlined" id="checked">X</span>
-          </div>
+      <div class="modal">
+        <h2>YOU CAN ONLY BUY ONE COPY</h2>
+        <div class="modal-content">
+          <a class="close" href="games.html">&times;</a>
+          <span class="material-symbols-outlined" id="checked">X</span>
         </div>
-    
+      </div>
     `;
   } else {
     const item = gamesList.data.find((game) => game.id === id);
-    cart.push(item);
-    document.getElementById("shopping-cart").innerHTML = `
-    <a href="shopping-cart.html"
-                  ><span class="material-symbols-outlined size-36"
-                    >shopping_cart</span
-                  >CART (${cart.length})</a
-                >
-                <div id="checkout" class="overlay">
-        
-    `;
-    document.getElementById("main").innerHTML = `
-    
+
+    // Add item to the cart
+    if (item) {
+      cart.push(item);
+
+      // Save the updated cart to localStorage
+      localStorage.setItem("cartList", JSON.stringify(cart));
+
+      // Update cart display
+      document.getElementById("shopping-cart").innerHTML = `
+        <a href="shopping-cart.html">
+          <span class="material-symbols-outlined size-36">shopping_cart</span>
+          CART (${cart.length})
+        </a>
+      `;
+
+      // Show success modal
+      document.getElementById("main").innerHTML = `
         <div class="modal">
           <h2>GAME ADDED SUCCESSFULLY</h2>
           <div class="modal-content">
             <a class="close" href="games.html">&times;</a>
-            <span class="material-symbols-outlined" id="checked"> check </span>
+            <span class="material-symbols-outlined" id="checked">check</span>
           </div>
         </div>
-    
-    `;
-    localStorage.setItem("cartList", JSON.stringify(cart));
-    let cartList = JSON.parse(localStorage.getItem("cartList"));
+      `;
+    } else {
+      alert("Unable to find the selected game. Please try again.");
+    }
   }
 }

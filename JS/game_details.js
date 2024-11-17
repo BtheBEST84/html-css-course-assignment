@@ -1,11 +1,10 @@
 // Load games
-let gamesList = JSON.parse(localStorage.getItem("gamesList")) || [];
-let cart = JSON.parse(localStorage.getItem("cartList")) || [];
-
+const gamesList = JSON.parse(localStorage.getItem("gamesList"));
 let games = [];
 let filterGenre = [];
 
 let cartList = JSON.parse(localStorage.getItem("cartList"));
+let cart;
 
 if (JSON.parse(localStorage.getItem("cartList")) === null) {
   cart = [];
