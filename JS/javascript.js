@@ -25,6 +25,11 @@ if (storedCart) {
 getGames();
 
 async function getGames() {
+  const loadingSpinner = document.getElementById("loading-spinner");
+
+  // Show the spinner before the fetch begins
+  loadingSpinner.style.display = "block";
+
   try {
     const response = await fetch("https://v2.api.noroff.dev/gamehub");
     const data = await response.json();
@@ -38,6 +43,10 @@ async function getGames() {
     renderGames();
   } catch (error) {
     alert("Something went wrong when trying to load the games");
+    console.error("Error fetching games:", error);
+  } finally {
+    // Hide the spinner once the fetch and rendering are complete
+    loadingSpinner.style.display = "none";
   }
 }
 
