@@ -76,10 +76,9 @@ function deleteFromCart(id) {
   }
 
   // Recalculate the total after deletion
-  total = cart.reduce(
-    (accumulator, current) => accumulator + (current.price || 0),
-    0
-  );
+  total = cart
+    .reduce((accumulator, current) => accumulator + (current.price || 0), 0)
+    .toFixed(2);
 
   // Rerender the cart icon and shopping cart items
   renderCart();
