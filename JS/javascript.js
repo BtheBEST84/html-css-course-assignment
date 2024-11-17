@@ -38,7 +38,6 @@ async function getGames() {
     renderGames();
   } catch (error) {
     alert("Something went wrong when trying to load the games");
-    console.log("ERROR!", error);
   }
 }
 

@@ -17,10 +17,7 @@ let total = cartList.reduce(
   0
 );
 
-console.log(total);
-
 function renderShoppingCartContent() {
-  console.log(cart);
   document.getElementById("shopping-cart-items").innerHTML = `
     <div class="shopping-cart-with-item-content">
       <div>
